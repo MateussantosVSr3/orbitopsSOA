@@ -46,7 +46,7 @@ O **OrbitOps** mitiga essas perdas financeiras e operacionais através de três 
 
 ## 🚀 Diagrama
 
-![APAreça](Diagrama.png)
+![](Diagram.png)
 
 ---
 
