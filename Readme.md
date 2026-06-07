@@ -49,7 +49,7 @@ O **OrbitOps** mitiga essas perdas financeiras e operacionais através de três 
 ### 🟢 Teste 1: Cenário Operacional Nominal (HTTP 200 OK)
 *Explicação:* Envio de telemetria com parâmetros estáveis (bateria fria e sinal ativo). O banco de dados registra o satélite com o status operacional como `"NOMINAL"`.
 
-![Print 1 - Resposta com Status NOMINAL](image.png)
+![](image.png)
 
 ```text
 🟡 Teste 2: Ativação de Modo de Segurança / Safe Mode (HTTP 200 OK)
