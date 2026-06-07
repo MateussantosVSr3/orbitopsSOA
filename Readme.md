@@ -1,14 +1,14 @@
-# 🛰️ OrbitOps - Governança Operacional Aeroespacial
-## 🚀 Módulo Backend & Arquitetura Orientada a Serviços (Java / Spring Boot)
+# OrbitOps - Governança Operacional Aeroespacial
+## Módulo Backend & Arquitetura Orientada a Serviços (Java / Spring Boot)
 
-## 📌 Descrição do Projeto
+## Descrição do Projeto
 O **OrbitOps** é uma plataforma corporativa de ITSM (Gerenciamento de Serviços de TI) e Governança Operacional desenhada para mitigar riscos logísticos, operacionais e financeiros na *New Space Economy*. Utilizando os princípios consolidados do ITIL/ITSM, o sistema atua como o centro de controle terrestre, interceptando dados brutos de telemetria de housekeeping vindos de constelações de nanossatélites (CubeSats) e automatizando a resposta a incidentes críticos antes que ocorram falhas catastróficas.
 
 Este módulo, desenvolvido em **Java com Spring Boot**, implementa uma **Arquitetura Orientada a Serviços (SOA)** responsável por expor WebServices REST seguros, realizar o mapeamento objeto-relacional de ativos e persistir o histórico de estados operacionais e alertas em um Banco de Dados Relacional.
 
 ---
 
-## 👥 Integrantes do Grupo
+## Integrantes do Grupo
 * **Mateus dos Santos da Silva** - RM 558436
 * **Nickolas Moreno Cardoso** - RM 557132
 * **André Giovane de Maria** - RM 556384
