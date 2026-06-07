@@ -55,9 +55,9 @@ O **OrbitOps** mitiga essas perdas financeiras e operacionais através de três 
 🟡 Teste 2: Ativação de Modo de Segurança / Safe Mode (HTTP 200 OK)
 Explicação: Envio de telemetria simulando anomalia térmica (temperatura > 55°C). O polimorfismo dinâmico entra em ação, altera o status do satélite para "SAFE_MODE" e insere automaticamente um registro de auditoria na tabela de alertas.
 ```
-![Print 1 - Resposta com Status NOMINAL](image2.png)
+![Print 1 - Resposta com Status Safe Mode](image2.png)
 ```text
 🔴 Teste 3: Tratamento de Falha Crítica de Comunicação (HTTP 503 Service Unavailable)
 Explicação: Envio de pacote com o campo sinalAtivo: false. O sistema dispara a exceção customizada SateliteDesconectadoException e o GlobalExceptionHandler captura o erro, montando um JSON de resposta limpo com as informações do incidente de rede para a equipe terrestre, retornando o código HTTP 503.
 ```
-![Print 1 - Resposta com Status NOMINAL](image3.png)
+![Print 1 - Resposta com Status HTTP 503](image3.png)
