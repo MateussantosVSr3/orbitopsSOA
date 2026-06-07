@@ -15,7 +15,7 @@ Este módulo, desenvolvido em **Java com Spring Boot**, implementa uma **Arquite
 
 ---
 
-## 🌌 Mitigação de Perdas na Economia Espacial
+## Mitigação de Perdas na Economia Espacial
 Na era da *New Space Economy*, o custo de fabricação e lançamento de CubeSats caiu drasticamente, porém o risco operacional aumentou exponencialmente. A perda de contato com um ativo espacial ou a degradação irreversível de seus componentes internos representa não apenas um prejuízo financeiro direto (perda do hardware e do lançamento), mas também perdas comerciais massivas devido à interrupção de contratos de fornecimento de dados (imagens climáticas, GPS, segurança e telecomunicações).
 
 O **OrbitOps** mitiga essas perdas financeiras e operacionais através de três pilares de governança automatizada:
@@ -25,7 +25,7 @@ O **OrbitOps** mitiga essas perdas financeiras e operacionais através de três 
 
 ---
 
-## 🛠️ Tecnologias e Requisitos Técnicos Implementados
+## Tecnologias e Requisitos Técnicos Implementados
 * **WebServices & API REST:** Exposição do endpoint corporativo `/api/orbitops/telemetria` para recebimento de payloads estruturados em formato JSON.
 * **Conexão com Banco de Dados:** Mapeamento Objeto-Relacional (ORM) implementado via **Spring Data JPA / Hibernate** com persistência física automatizada nas tabelas relacionais `T_ORBIT_SATELITE` e `T_ORBIT_ALERTA`.
 * **Banco de Dados Relacional:** Utilização do banco de dados em memória **H2 Database** para armazenamento, consultas rápidas e rastreabilidade dos ativos espaciais.
@@ -35,7 +35,7 @@ O **OrbitOps** mitiga essas perdas financeiras e operacionais através de três 
 
 ---
 
-## 🚀 Como Executar a Aplicação
+## Como Executar a Aplicação
 1. Importe o projeto como um projeto Maven na sua IDE de preferência (IntelliJ, Eclipse ou Spring Tool Suite).
 2. Certifique-se de estar utilizando o **Java 17** ou superior.
 3. Execute o projeto rodando a classe principal `OrbitOpsApplication.java`.
@@ -44,26 +44,26 @@ O **OrbitOps** mitiga essas perdas financeiras e operacionais através de três 
 
 ---
 
-## 🚀 Diagrama
+## Diagrama
 
 ![](Diagram.png)
 
 ---
 
-## 📸 Evidências de Execução de Testes (Postman)
+## Evidências de Execução de Testes (Postman)
 
-### 🟢 Teste 1: Cenário Operacional Nominal (HTTP 200 OK)
+### Teste 1: Cenário Operacional Nominal (HTTP 200 OK)
 *Explicação:* Envio de telemetria com parâmetros estáveis (bateria fria e sinal ativo). O banco de dados registra o satélite com o status operacional como `"NOMINAL"`.
 
 ![](image.png)
 
 ```text
-🟡 Teste 2: Ativação de Modo de Segurança / Safe Mode (HTTP 200 OK)
+Teste 2: Ativação de Modo de Segurança / Safe Mode (HTTP 200 OK) 
 Explicação: Envio de telemetria simulando anomalia térmica (temperatura > 55°C). O polimorfismo dinâmico entra em ação, altera o status do satélite para "SAFE_MODE" e insere automaticamente um registro de auditoria na tabela de alertas.
 ```
 ![](image2.png)
 ```text
-🔴 Teste 3: Tratamento de Falha Crítica de Comunicação (HTTP 503 Service Unavailable)
+Teste 3: Tratamento de Falha Crítica de Comunicação (HTTP 503 Service Unavailable)
 Explicação: Envio de pacote com o campo sinalAtivo: false. O sistema dispara a exceção customizada SateliteDesconectadoException e o GlobalExceptionHandler captura o erro, montando um JSON de resposta limpo com as informações do incidente de rede para a equipe terrestre, retornando o código HTTP 503.
 ```
 ![](image3.png)
