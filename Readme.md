@@ -44,6 +44,12 @@ O **OrbitOps** mitiga essas perdas financeiras e operacionais através de três 
 
 ---
 
+## 🚀 Diagrama
+
+![APAreça](Diagrama.png)
+
+---
+
 ## 📸 Evidências de Execução de Testes (Postman)
 
 ### 🟢 Teste 1: Cenário Operacional Nominal (HTTP 200 OK)
